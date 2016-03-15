@@ -2,7 +2,8 @@
   "name": "kelly",
   "version": "1.0.0",
   "engines": {
-	  "node":"5.7.1"
+	  "node": "5.7.1",
+	  "npm": "3.6.0"
   },
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",    
