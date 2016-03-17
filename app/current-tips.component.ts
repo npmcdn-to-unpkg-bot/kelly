@@ -2,12 +2,10 @@ import { Component } from 'angular2/core';
 import { Router } from 'angular2/router';
 
 @Component({
-  selector: 'make-a-tip',
-  templateUrl: 'app/make-a-tip.component.html'
+  selector: 'current-tips',
+  templateUrl: 'app/current-tips.component.html'
 })
-export class MakeATipComponent {
-	onClicked() {
-	}
+export class CurrentTipsComponent {
 }
 
 /*

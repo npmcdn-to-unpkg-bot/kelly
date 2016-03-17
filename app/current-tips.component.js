@@ -11,28 +11,26 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var MakeATipComponent;
+    var CurrentTipsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            MakeATipComponent = (function () {
-                function MakeATipComponent() {
+            CurrentTipsComponent = (function () {
+                function CurrentTipsComponent() {
                 }
-                MakeATipComponent.prototype.onClicked = function () {
-                };
-                MakeATipComponent = __decorate([
+                CurrentTipsComponent = __decorate([
                     core_1.Component({
-                        selector: 'make-a-tip',
-                        templateUrl: 'app/make-a-tip.component.html'
+                        selector: 'current-tips',
+                        templateUrl: 'app/current-tips.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], MakeATipComponent);
-                return MakeATipComponent;
+                ], CurrentTipsComponent);
+                return CurrentTipsComponent;
             }());
-            exports_1("MakeATipComponent", MakeATipComponent);
+            exports_1("CurrentTipsComponent", CurrentTipsComponent);
         }
     }
 });
@@ -40,5 +38,5 @@ System.register(['angular2/core'], function(exports_1, context_1) {
 Copyright 2016 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
-*/ 
-//# sourceMappingURL=make-a-tip.component.js.map
+*/
+//# sourceMappingURL=current-tips.component.js.map

@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './dashboard.component', './make-a-tip.component', './current-tip.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './dashboard.component', './make-a-tip.component', './current-tips.component', './tips-history.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './dashboard.component', '.
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, dashboard_component_1, make_a_tip_component_1, current_tip_component_1;
+    var core_1, router_1, dashboard_component_1, make_a_tip_component_1, current_tips_component_1, tips_history_component_1;
     var AppComponent;
     return {
         setters:[
@@ -26,8 +26,11 @@ System.register(['angular2/core', 'angular2/router', './dashboard.component', '.
             function (make_a_tip_component_1_1) {
                 make_a_tip_component_1 = make_a_tip_component_1_1;
             },
-            function (current_tip_component_1_1) {
-                current_tip_component_1 = current_tip_component_1_1;
+            function (current_tips_component_1_1) {
+                current_tips_component_1 = current_tips_component_1_1;
+            },
+            function (tips_history_component_1_1) {
+                tips_history_component_1 = tips_history_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -37,7 +40,7 @@ System.register(['angular2/core', 'angular2/router', './dashboard.component', '.
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n\t\t<div class=\"pure-menu pure-menu-horizontal\">\n\t\t\t<a [routerLink]=\"['Dashboard']\" class=\"pure-menu-heading pure-menu-link\">Dashboard</a>\n\t\t\t<ul class=\"pure-menu-list\">\n\t\t\t\t<li class=\"pure-menu-item\"><a [routerLink]=\"['MakeATip']\" class=\"pure-menu-link\">Make a tip</a></li>\n\t\t\t\t<li class=\"pure-menu-item\"><a [routerLink]=\"['CurrentTip']\" class=\"pure-menu-link\">Current tip</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t\t<router-outlet></router-outlet>\n\t",
+                        template: "\n\t\t<div class=\"pure-menu pure-menu-horizontal\">\n\t\t\t<a [routerLink]=\"['Dashboard']\" class=\"pure-menu-heading pure-menu-link\">Dashboard</a>\n\t\t\t<ul class=\"pure-menu-list\">\n\t\t\t\t<li class=\"pure-menu-item\"><a [routerLink]=\"['MakeATip']\" class=\"pure-menu-link\">Make a tip</a></li>\n\t\t\t\t<li class=\"pure-menu-item\"><a [routerLink]=\"['CurrentTips']\" class=\"pure-menu-link\">Current tips</a></li>\n\t\t\t\t<li class=\"pure-menu-item\"><a [routerLink]=\"['TipsHistory']\" class=\"pure-menu-link\">Tips History</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t\t<router-outlet></router-outlet>\n\t",
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [router_1.ROUTER_PROVIDERS]
                     }),
@@ -54,9 +57,14 @@ System.register(['angular2/core', 'angular2/router', './dashboard.component', '.
                             component: make_a_tip_component_1.MakeATipComponent
                         },
                         {
-                            path: '/current-tip',
-                            name: 'CurrentTip',
-                            component: current_tip_component_1.CurrentTipComponent
+                            path: '/current-tips',
+                            name: 'CurrentTips',
+                            component: current_tips_component_1.CurrentTipsComponent
+                        },
+                        {
+                            path: '/tips-history',
+                            name: 'TipsHistory',
+                            component: tips_history_component_1.TipsHistoryComponent
                         }
                     ]), 
                     __metadata('design:paramtypes', [])
